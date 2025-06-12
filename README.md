@@ -19,6 +19,7 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
 
 ### Related examples
+1
 
 - [WordPress](/examples/cms-wordpress)
 - [DatoCMS](/examples/cms-datocms)
