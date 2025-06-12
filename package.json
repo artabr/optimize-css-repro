@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "postinstall": "ncp patches/pages.runtime.prod.js node_modules/next/dist/compiled/next-server/pages.runtime.prod.js",
     "dev": "next",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production next start",
@@ -11,6 +12,7 @@
     "critters": "^0.0.23",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
+    "ncp": "^2.0.0",
     "next": "15.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
