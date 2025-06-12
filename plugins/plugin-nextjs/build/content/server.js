@@ -5,15 +5,15 @@
       })();
     
 import {
-  require_semver
-} from "../../esm-chunks/chunk-TLQCAGE2.js";
+  trace,
+  wrapTracer
+} from "../../esm-chunks/chunk-FKDTZJRV.js";
 import {
   require_out
 } from "../../esm-chunks/chunk-YUXQHOYO.js";
 import {
-  trace,
-  wrapTracer
-} from "../../esm-chunks/chunk-FKDTZJRV.js";
+  require_semver
+} from "../../esm-chunks/chunk-TLQCAGE2.js";
 import {
   __toESM
 } from "../../esm-chunks/chunk-6BT4RYQJ.js";
@@ -84,7 +84,7 @@ var copyNextServerCode = async (ctx) => {
     const nextFolder = toPosixPath(ctx.distDir) === toPosixPath(ctx.buildConfig.distDir) ? ctx.distDir : ctx.nextDistDir;
     const destDir = join(ctx.serverHandlerDir, nextFolder);
     const paths = await (0, import_fast_glob.default)(
-      [`*`, `server/*`, `server/chunks/*`, `server/edge-chunks/*`, `server/+(app|pages)/**/*.js`],
+      [`*`, `server/*`, `server/chunks/*`, `server/edge-chunks/*`, `server/+(app|pages)/**/*.js`, `static/css/*`],
       {
         cwd: srcDir,
         extglob: true
